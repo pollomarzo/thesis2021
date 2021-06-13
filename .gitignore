@@ -1,4 +1,4 @@
-# latex trash
+# latex trash just in case cleanup fails
 *.aux
 *.fdb_latexmk
 *.fls
