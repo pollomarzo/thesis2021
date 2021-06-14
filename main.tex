@@ -5,6 +5,9 @@
 % package definitions
 \usepackage{graphicx}
 \graphicspath{img/}
+\usepackage{biblatex}
+\addbibresource{bibliography.bib}
+\usepackage[autostyle]{csquotes}  
 
 
 \usepackage{subfiles} % Best loaded last in the preamble
@@ -15,13 +18,51 @@
 
 \begin{document}
 
+\begin{abstract}
+    This is where the abstract will go. I guess I'll mention a thing or two about the contents, what I plan to discuss and what my analysis shows.
+\end{abstract}
+
 \maketitle
 \newpage
 
 \section{Introduction}
-right. here's a little test for github integration
+\subfile{sections/intro}
 
-\subfile{sections/test1}
+\section{Terms and Definitions}
+\subfile{sections/glossary}
+
+\section{A History of Influences}
+As mentioned in the introduction, our approach will follow the historical sequence of events, although some references or explanations may be anachronistic for clarity. In order to give a general view, we split the histories of these disciplines into broad periods: one for (more or less) every substantial shift in approach and views.
+
+\subsection{Landscape before 1950}
+\subfile{sections/50_earlier}
+
+\subsection{1956: A Pivotal Year}
+\subfile{sections/56_pivotal}
+
+\subsection{1960-1970: Great Promise}
+\subfile{sections/60-70}
+
+\subsection{1975-1985: Ashes and Embers}
+\subfile{sections/75-85}
+
+\subsection{1987-1993: Bodies as the Key to Minds}
+\subfile{sections/87-93}
+
+\subsection{1993-2000: Agents and Cooperation}
+\subfile{sections/93-2000}
+
+\subsection{2000-now: Hybrid Systems: New Perspectives}
+\subfile{sections/2000-now}
+
+\section{Perception shifts}
+Should I merge these two?
+\subsection{Symbolism and Connectionism}
+\subsection{Symbols and Subsymbols: Collect or Extract}
+
+\section{Conclusion}
+
+\printbibliography
 
 
 \end{document}
