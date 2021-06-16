@@ -1,0 +1,38 @@
+% !TEX root = ../main.tex
+
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../img/}}}
+
+\begin{document}
+
+Although the official birth of the "Cognitive Science" institutions is in the late 1970s, reasoning about thought has been a staple in philosophical research for centuries. Because of the scope of this document, we will focus on a few important concepts, and use them to set the stage for the first large shift of ideas.
+
+\subsubsection{Mathematics and Computer Science}
+Some of the most relevant contributions to the "reasoning as a process" come from Mathematics and what would later become Theoretical Computer Science. We will outline some of them here, while we trace part of the history of conceiving of thought as computation, first, and computers as devices for computation, second. In this respect, the following step is to be expected: can we use devices for the computation that thoughts "work" with?
+
+\textbf{Boole's Laws of Thought and Boolean Algebra.} To avoid going too deep in mathematical concepts for our purposes, we can think of Boolean algebra as the branch of algebra where the variables can be either true or false (1 and 0), and the main operations on its variables are conjuction (and, $\wedge$), disjunction (or, $\vee$), negation (not, $\neg$). Through these, logical operations can be described.
+In "An Investigation of the Laws of Thought on Which are Founded the Mathematical Theories of Logic and Probabilities", one of the author's two monographs on algebraic logic, George Boole, then mathematics professor in Ireland, introduces Boole's algebra as an extension to Aristotle's logic. In it, Boole provides Aristotle's algebra with mathematical foundations, and expands it from two-term to any-term. Boole's algebra differs from modern Boolean algebra (in Boole's algebra \textit{uninterpretable} terms exist) and cannot be inteprepted as set operations; still, its introduction marks a step towards the formalization of laws of thought and a possible bridge between mathematical research and thinking processes (even the title of the book it was introduced in gives a very clear direction). Boolean algebra would instead be developed by Boole's successors (Jevons, Peirce, Schroder and Huntington in particular); this work allows boolean algebra to now be defined by the Stanford Encyclopedia as
+\begin{quote}
+    the algebra of two-valued logic with only sentential connectives, or equivalently of algebras of sets under union and complementation.
+\end{quote}
+
+\textbf{Automata theory.} The study of how automatic calculators (more properly, abstract machines \textbf{TODO: mi sbaglio?} or automata) can be used to compute and solve problems is a part of theoretical computer science research. The history of Automata Theory is especially interesting, as it will let us meet some important researchers: it features two neurophysiologists, Warren McCulloch and Walter Pitts, and is thus born from the desire of modeling human thought itself. The first model was proposed in 1943 \cite{mccullochLogicalCalculusIdeas1943}, in a seminal paper that also introduced other research themes we will come back to later. A little over twelve years later, two computer scientists, Mealy and Moore, generalized the theory to more powerful machines, "Finite-State machines". The general idea behind them is this: starting from an input and a set of states, a "transition function" maps the current state and an input to an output together with the next state. They do not have any memory, and as such can only "solve" simpler problems: if used to recognize languages, they can only recognize regular ones.
+
+More powerful abstract machines had already been proposed: Turing had introduced "Turing machines" in 1937 \cite{turingComputableNumbersApplication1937}, as part of his proof of the Entscheidungsproblem. The relationship between automata "expressive power" and language complexity will be explained in later chapters.
+
+\textbf{Cybernetics.} Although in recent years the term "cybernetic" has been used to mean futuristic/sci-fi technology, Cybernetics is a transdisciplinary discipline that studies regulatory systems. The core of the discipline are feedback loops (or circular causality), where the result of action is taken as input for (choosing) future actions. Cybernetics isn't bound to any particular application, so its applications include biology, sociology, computer science, robotics and many others. Its flexible approach led to many different definitions: two early ones are the one used in Macy cybernetics conferences, "the study of circular causal and feedback mechanisms in biological and social systems"\cite{steerCyberneticsCircularCausal1952}, and the definition by Norbert Wiener, considered the originator of cybernetics, "the scientific study of control and communication in the animal and the machine"\cite{wienerCyberneticsControlCommunication1961}. Although the word itself was used by Plato to signify the governance of people, our interest resides in contemporary cybernetics, born in the 1940s. Before the aforementioned paper by McCulloch and Pitts, the study of feedback was considered by Anokhin in 1935 \cite{anokhinProblemsCentrePeriphery1935} (physiologist). In the same year as the McCulloch-Pitts paper was published, Wiener, together with Rosenblueth and Bigelow, published "Behavior, Purpose and Teleology" \cite{rosenbluethBehaviorPurposeTeleology1943}: these three researchers, together with McCulloch, Turing, Grey Walter and Ross Ashby, would go on to establish the discipline of cybernetics. Wiener coined the term to denote "teleological mechanisms".
+
+An important addition to the field would be the Von Neumann cellular automata, which introduced the concept of self replication, soon adopted by cybernetics as a core concept. Another important contribution from cybernetics is the creation of Artificial Neural Networks, introduced in the same McCulloch-Pitts paper we mentioned earlier.
+
+- cybernetics
+- information theory
+
+topics:
+- behaviorism
+- gestalt?
+- Vygotsky-Luria?
+- Several psychologists who later pioneered a more cognitive approach, including Miller, Ulric Neisser, and Donald Norman, received their training in S. S. Stevens’s Psycho-acoustic Laboratory at Harvard
+- simplest mcCullough-Pitts neuron is 1943!
+
+
+\end{document}
