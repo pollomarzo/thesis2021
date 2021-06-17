@@ -16,16 +16,33 @@ In "An Investigation of the Laws of Thought on Which are Founded the Mathematica
     the algebra of two-valued logic with only sentential connectives, or equivalently of algebras of sets under union and complementation.
 \end{quote}
 
+KEY CONCEPTS: laws of thought can be modeled in mathematics, using algebra.
+
+\vspace{4pt}
 \textbf{Automata theory.} The study of how automatic calculators (more properly, abstract machines \textbf{TODO: mi sbaglio?} or automata) can be used to compute and solve problems is a part of theoretical computer science research. The history of Automata Theory is especially interesting, as it will let us meet some important researchers: it features two neurophysiologists, Warren McCulloch and Walter Pitts, and is thus born from the desire of modeling human thought itself. The first model was proposed in 1943 \cite{mccullochLogicalCalculusIdeas1943}, in a seminal paper that also introduced other research themes we will come back to later. A little over twelve years later, two computer scientists, Mealy and Moore, generalized the theory to more powerful machines, "Finite-State machines". The general idea behind them is this: starting from an input and a set of states, a "transition function" maps the current state and an input to an output together with the next state. They do not have any memory, and as such can only "solve" simpler problems: if used to recognize languages, they can only recognize regular ones.
 
-More powerful abstract machines had already been proposed: Turing had introduced "Turing machines" in 1937 \cite{turingComputableNumbersApplication1937}, as part of his proof of the Entscheidungsproblem. The relationship between automata "expressive power" and language complexity will be explained in later chapters.
+More powerful abstract machines had already been proposed: Turing had introduced "Turing machines" in 1937 \cite{turingComputableNumbersApplication1937}, as part of his proof of the Entscheidungsproblem. The relationship between automata "expressive power" and language complexity will be explained in later chapters. \textbf{TODO: undecidability problem already puts a stop to modeling thought as maths?}
 
+KEY CONCEPTS: Modeling algebra, so thought, is possible through some computational structure
+
+\vspace{4pt}
 \textbf{Cybernetics.} Although in recent years the term "cybernetic" has been used to mean futuristic/sci-fi technology, Cybernetics is a transdisciplinary discipline that studies regulatory systems. The core of the discipline are feedback loops (or circular causality), where the result of action is taken as input for (choosing) future actions. Cybernetics isn't bound to any particular application, so its applications include biology, sociology, computer science, robotics and many others. Its flexible approach led to many different definitions: two early ones are the one used in Macy cybernetics conferences, "the study of circular causal and feedback mechanisms in biological and social systems"\cite{steerCyberneticsCircularCausal1952}, and the definition by Norbert Wiener, considered the originator of cybernetics, "the scientific study of control and communication in the animal and the machine"\cite{wienerCyberneticsControlCommunication1961}. Although the word itself was used by Plato to signify the governance of people, our interest resides in contemporary cybernetics, born in the 1940s. Before the aforementioned paper by McCulloch and Pitts, the study of feedback was considered by Anokhin in 1935 \cite{anokhinProblemsCentrePeriphery1935} (physiologist). In the same year as the McCulloch-Pitts paper was published, Wiener, together with Rosenblueth and Bigelow, published "Behavior, Purpose and Teleology" \cite{rosenbluethBehaviorPurposeTeleology1943}: these three researchers, together with McCulloch, Turing, Grey Walter and Ross Ashby, would go on to establish the discipline of cybernetics. Wiener coined the term to denote "teleological mechanisms".
 
-An important addition to the field would be the Von Neumann cellular automata, which introduced the concept of self replication, soon adopted by cybernetics as a core concept. Another important contribution from cybernetics is the creation of Artificial Neural Networks, introduced in the same McCulloch-Pitts paper we mentioned earlier.
+An important addition to the field would be the Von Neumann cellular automata: these are yet another model of computation part of automata theory. A cellular automata is a grid of cells (of any dimensions, but for clarity, consider a 2-dimensional one first), of which each has a finite number of states it can be in; the cellular automata evolves by moving from generation zero ($t=0$) to the next generation ($t=1$) following mathematical rules: the state of every cell is determined by its past state and the surrounding cells. Without going into the specific rules Von Neumann determined, this is relevant to us because it introduces the concept of self replication, soon adopted by cybernetics as a core concept. Another important contribution from cybernetics is the creation of Artificial Neural Networks, introduced in the same McCulloch-Pitts paper we mentioned earlier.
 
-- cybernetics
-- information theory
+KEY CONCEPTS: Study of feedback is subject-agnostic, self replication, artificial neural networks.
+
+\vspace{4pt}
+\textbf{Information theory and technical advances.} As we have seen, theoretical advances were many and varied, but the technical advances were what drove the ability to put those in practice. Among those, we have to mention the move from electromechanical devices to vacuum tube-based computers, which gave birth to a device for controlling the connections between telephone exchanges, thanks to Flowers, in 1934. The record for the first general-purpose stored-program (as in, controlled by wires, the opposite of a stored-program computer) went to Konrad Zuse, with the Z3 machine. This machine also used a binary system, but it was not a universal computer. In 1944, the Bletchley Park cryptanalysts started using Colossus. The first Turing-complete (i.e. with the same computing ability as the Turing machine) computer was completed in 1945. It used over 18.000 vacuum tubes. The first stored-program computer, built as a testbed for new technology and design, was the Manchester Baby, ran in June 1948\cite{}.
+
+As part of the advances of this period, we must mention the birth and development of Information Theory. Information Theory encompasses the study of quantification, storage and communication of information, in digital form. After being introduced by Nyquist and Ralph \cite{}, the field was firmly established by Shannon's "A Mathematical Theory of Communication" in 1948. Without going into mathematical details, its main influences include the bit as a unit of informationa and the necessity of redundancy of a source when using unreliable communication channels.
+
+\subsubsection{DCS}
+The DCS landscape around 1950 was strongly rooted in Behaviorism, with hints of the revolution that was soon to come. Some of the larger influences from the Computer Science side, such as the McCullough Pitts artificial neural network we mentioned, would in fact be ignored and re-discovered at the following shift.
+
+\vspace{4pt}
+\textbf{Behaviorism.}
+
 
 topics:
 - behaviorism

@@ -3,3 +3,5 @@
 - Are titles like this fine? they're fun!
 
 - perception shifts may need to be merged
+
+- i want to do a "what we learned" for each paragraph
