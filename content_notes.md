@@ -16,7 +16,9 @@ Donald Hebb fire together get stronger; Rosenblatt perceptron
 INFO: LT to GPS; Ross Quillian semantic network; Minsky critique of NN 1969; Rosen team build shakey, Winograd SHRLDU (70s?). 
 PSYCH: 1960 Miller-Bruner center for Cognitive Studies; 1968 Atkinson-Shiffrin integrate sensory memory (Sperling), short-term memory (Peterson),  and  the  distinction  between  short-term and long-term memory (William James; Waugh and Norman). Lynn Cooper and Jacqueline Metzler show that figuring out a rotation scales linearly with how rotated the figure is (mental model?). 1967, Ulric Neisser "cognitive psychology". 
 
-- 1975-1985
+- 1970-1985
+- minsky
+- expert systems, knowledge-based
 AI: 
 1976 Physical Symbol Systems Hypothesis newell-simon (important! we need later)
 - AI winter 
