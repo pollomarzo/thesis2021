@@ -35,6 +35,7 @@ AI:
 - expert systems and connectionism reborn
     - definition and a couple examples
     - 1982 Hopfield proves NN learn, Hinton-Rumelhart popularize backpropagation (and hidden layers!), 1986 "Parallel Distributed Processing", 1988 Pinker and Prince eliminativism (symbolic theories are crude approximations of the brain and we must give way to connectionism)
+    
 COGSCI:
 - 1977 journal "cognitive science" is born
 - PSSH -> computational theory of mind
