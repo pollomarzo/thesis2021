@@ -11,6 +11,9 @@
 
 
 - 1960-70
+Ross Quillian semantic network!!!!!!!
+
+
 NEURO: neural network neurophysiologist Warren McCulloch and logician Walter Pitts; 
 Donald Hebb fire together get stronger; Rosenblatt perceptron
 INFO: LT to GPS; Ross Quillian semantic network; Minsky critique of NN 1969; Rosen team build shakey, Winograd SHRLDU (70s?). 
@@ -37,6 +40,16 @@ COGSCI:
 - PSSH -> computational theory of mind
 - classical cognitive science: cognitive modeling (1975-1985)
     - most prominent: Chomsky 1981 "CS research in fact fell short of the scope even its original symbol-processing framework provided."
+A third researcher, Gordon Bower,
+moved from mathematical models of learning towards
+more cognitively oriented work on the nature of
+mental representations. One of his students, John
+Anderson, worked with Bower on a very influential
+semantic network model (HAM), that was described
+in their 1973 book, Human Associatie Memory. Later
+Anderson combined it with a production system
+component in ACT* and its predecessors.
+
 - 1987-1993
 - second AI winter
     - expert systems can't learn, too expensive, brittle. Japan's fifth generation concludes nothing.
