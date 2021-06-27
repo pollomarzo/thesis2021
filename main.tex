@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[oneside]{article}
 
 % package definitions
 \usepackage{graphicx}
@@ -13,9 +13,15 @@
 \usepackage[normalem]{ulem}
 \usepackage[autostyle]{csquotes}
 \usepackage[english]{babel}
-
+\usepackage{todonotes} %% won't need it in final version
+\usepackage{xcolor}
 
 \usepackage{subfiles} % Best loaded last in the preamble
+
+\definecolor{lightblue}{HTML}{516eff}
+\newcommand{\sidekeyword}[1]{\marginpar{\raggedright\textcolor{lightblue}{\textbf{#1}}}}
+
+\reversemarginpar % use \normalmarginpar to switch back!
 
 \title{Cognitive Science and Artificial Intelligence: An Interwoven Approach \\
 \large Supervisor: Francesco Bianchini}
