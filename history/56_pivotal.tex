@@ -5,7 +5,7 @@
 
 As we have mentioned in the previous section, there were various lines of research into thought modeling: automata theory was focused on what problems were possible to model, cybernetics took (analog and biology-based) feedback and self replication as founding pillars, while information theory dedicated itself to information storage and transmission. Instead, DCS was still mostly led by behaviorist views, but cognitive-oriented proposals started to emerge. This trend would continue in 1956, and spike in 1957 with a publication by Noam Chomsky that would change the field.
 
-\subsubsection{CS}
+\subsection{CS}
 The most relevant event of 1956 (and quite possibly of the history of AI research) is the Darmouth College Workshop, a sort of convention that connected researchers from diverse fields interested on similar topics. This is also the context in which the term ``Artificial Intelligence" was attached to the field.
 
 \vspace{4pt}
@@ -16,7 +16,7 @@ As we said, at the start of the 1950s thinking machines were being inspected by 
 \textbf{Logic Theorist.}\sidekeyword{Reasoning as search}
 The Logic Theorist was created in 1955 by Newell and Simon, helped by the systems programmer John Shaw. In order to prove a theorem, the simplest strategy is to start from the theory's postulates and create new theorems by combining them; then continue by combining every theorem with every postulate and every theorem again, exploring the entire truth spectrum. Although this may seem obvious, this is part of the first important concept introduced by the Logic Theorist: seeing the truth space as a tree, that started with the hypothesis and aimed at the proposition to prove; envisioning \textit{reasoning as search}. Of course, exploring the entire tree is impractical, because of the time it takes to explore the entire truth space (as it grows exponentially); when considered from the point of view of ``modeling the human thought process", this solution would not be useful even if it was practical, because this is not how human theorem-provers work. In order to solve this problem, the Logic Theorist introduced the second important factor: employing \textit{heuristics} to ignore branches that were unlikely to lead to the goal. The last important factor is technical: in order to implement the Logic Theorist, the authors implemented IPL, a programming language that used symbolic \textit{list processing} in the same way as the following, fundamental, Lisp.
 
-\subsubsection{DCS}
+\subsection{DCS}
 In this section, we'll talk about some of the important findings that seemed difficult to integrate with behaviorism and the important actors behind them.
 
 \vspace{4pt}

@@ -1,4 +1,4 @@
-\documentclass[oneside]{article}
+\documentclass[oneside]{report}
 
 % package definitions
 \usepackage{graphicx}
@@ -13,6 +13,7 @@
 \usepackage[normalem]{ulem}
 \usepackage[autostyle]{csquotes}
 \usepackage[english]{babel}
+\usepackage{wrapfig}
 \usepackage{todonotes} %% won't need it in final version
 \usepackage{xcolor}
 
@@ -36,43 +37,49 @@
 \maketitle
 \newpage
 
-\section{Introduction}
-\subfile{sections/intro}
+\tableofcontents
+\newpage
 
-\section{Terms and Definitions}
-\subfile{sections/glossary}
+\chapter{Introduction}
+\subfile{history/intro}
 
-\section{A History of Influences}
+\chapter{Terms and Definitions}
+\subfile{history/glossary}
+
+\chapter{A History of Influences}
 As mentioned in the introduction, our approach will follow the historical sequence of events, although some references or explanations may be anachronistic for clarity. In order to give a general view, we split the histories of these disciplines into broad periods: one for (more or less) every substantial shift in approach and views. Generally, every time period will mention two sides of the story: one of them will focus on DCS, and the other on AI and Computer Science. At the same time, the two fields are in close relation: because of this, it becomes hard to neatly define the two fields, so some paragraphs will be somewhere in the middle (as they should be!).
 
-\subsection{Landscape before 1950}
-\subfile{sections/50_earlier}
+\section{Landscape before 1950}
+\subfile{history/50_earlier}
 
-\subsection{1956: A Pivotal Year}
-\subfile{sections/56_pivotal}
+\section{1956: A Pivotal Year}
+\subfile{history/56_pivotal}
 
-\subsection{1960-1970: Great Promise}
-\subfile{sections/60-70}
+\section{1960-1970: Great Promise}
+\subfile{history/60-70}
 
-\subsection{1970-1985: Symbols and Knowledge}
-\subfile{sections/70-85}
+\section{1970-1985: Symbols and Knowledge}
+\subfile{history/70-85}
 
-\subsection{1987-1993: Bodies as the Key to Minds}
-\subfile{sections/87-93}
+\section{1987-1993: Bodies as the Key to Minds}
+\subfile{history/87-93}
 
-\subsection{1993-2010: Agents and Cooperation}
-\subfile{sections/93-2010}
+\section{1993-2010: Agents and Cooperation}
+\subfile{history/93-2010}
 
-\subsection{2010-now: New Perspectives and Hybrid Systems}
-\subfile{sections/2010-now}
+\section{2010-now: New Perspectives and Hybrid Systems}
+\subfile{history/2010-now}
 
-\section{Perception shifts}
+\chapter{Perception shifts}
 Should I merge these two?
-\subsection{Symbolism and Connectionism}
-\subsection{Symbols and Subsymbols: Collect or Extract}
+\section{Symbolism and Connectionism}
+\section{Symbols and Subsymbols: Collect or Extract}
 
-\section{Conclusion}
+\chapter{Conclusion}
 
+\appendix
+\chapter{Learning and Neural Networks}
+\subfile{appendix/learning}
 
 \printbibliography
 
