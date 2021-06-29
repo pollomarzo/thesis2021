@@ -8,7 +8,7 @@
 \section{Learning}
 Here, we will give a very brief overview of learning and its types. We will not use a historical approach: many of the algorithms and mathematics entailed are a staple of statistics, and it would be an unreasonable (and misplaced) effort to recount it here.
 
-Machine learning is ``". ``Artificial Intelligence - A Modern Approach'' identifies four deciding factors that determine the improvements to an agent's component and how to make them:
+Machine learning is ``is a field of computer science that aims to teach computers how to learn and act without being explicitly programmed\cite{MachineLearning2019}". ``Artificial Intelligence - A Modern Approach'' identifies four deciding factors that determine the improvements to an agent's component and how to make them:
 \begin{enumerate}
     \item Which component of the agent will be improved.
     \item What prior knowledge the agent already holds.
@@ -91,6 +91,16 @@ This type of recurrent neuron is only capable of limited time-context sizes: con
 \end{wrapfigure}
 
 To tackle this, more complicated recurrent architectures were created. In the text, we mentioned LSTM (Long Short-Term Memory) cells. A much more complete introduction to them can be found \href{http://colah.github.io/posts/2015-08-Understanding-LSTMs/}{here}, a blog post so well-written it has become the unofficial standard introduction to LSTMs. What is relevant to us is that they do not have the long-term dependency issue we mentioned before, thanks to a gated \textit{cell state} and some simple forget and remember operation. Innumerent variations exist: as we mentioned in the text, this period of Deep Learning research does not stem from a focused and methodic mathematical search for optimized structures, but from successive approximations and intuitions.
+
+\section{Additional Architectures and Features}
+In this section, we will briefly go over some of the architectures in which networks are organized.
+
+\textbf{Encoder-Decoder.} These models have one general characteristics: they are divided into two functional parts; the encoder forces the network to model the input into a (normally) lower-dimensional vector, which trains it to avoid noise; the decoder then translates this vector into a useful output. The specific characteristics of encoders and decoders don't really matter: with recurrent cell-based encoder and decoder, the network can approach variable-length tasks; with convolutional layers, the network becomes simple and quick to train (and can be further slimmed down by additional improvements like quantization); removing the decoder leaves the possible problem space mapped into a fixed-dimension vector, that can then be exported as a map in, for example, natural language processing tasks.
+
+\textbf{Attention.} For a detailed explanation of some attention-based architectures, see \href{https://distill.pub/2016/augmented-rnns/}{distill.pub}. A simple explanation is that attention is a mechanism to let neural networks interact with other mediums, while keeping the interaction differentiable (hence learnable), whether the medium is a fixed memory (Neural Turing Machines), another RNN (Attentional Interfaces), or itself, by choosing how many times to `think' about a given input (Adaptive Computation Time). An example of an attention-based architecture is a Transformer.
+
+\textbf{Generative Adversarial Networks.} GANs utilize two different networks: a generative network, which generates possible candidates, and a discriminative network, which evaluates them. This causes both of them to learn at the same time, and training is stopped when the discriminative gives the wrong answer about half the time. They were born as a way to train networks in unsupervised tasks, but they are now used in unsupervised, semi-supervised and supervised tasks.
+
 
 
 \end{document}
