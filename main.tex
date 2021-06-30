@@ -1,4 +1,4 @@
-\documentclass[oneside]{report}
+\documentclass[oneside,notitlepage]{report}
 
 % package definitions
 \usepackage{graphicx}
@@ -16,6 +16,7 @@
 \usepackage{wrapfig}
 \usepackage{todonotes} %% won't need it in final version
 \usepackage{xcolor}
+\usepackage{titling}
 
 \usepackage{subfiles} % Best loaded last in the preamble
 
@@ -29,13 +30,12 @@
 \author{Paolo Marzolo}
 
 \begin{document}
-
-\begin{abstract}
-    This is where the abstract will go. I guess I'll mention a thing or two about the contents, what I plan to discuss and what my analysis shows.
-\end{abstract}
-
-\maketitle
-\newpage
+\begin{titlingpage}
+    \maketitle
+    \begin{abstract}
+        This is where the abstract will go. I guess I'll mention a thing or two about the contents, what I plan to discuss and what my analysis shows.
+    \end{abstract}
+\end{titlingpage}
 
 \tableofcontents
 \newpage
