@@ -8,7 +8,7 @@
 \section{Learning}
 Here, we will give a very brief overview of learning and its types. We will not use a historical approach: many of the algorithms and mathematics entailed are a staple of statistics, and it would be an unreasonable (and misplaced) effort to recount it here.
 
-Machine learning is ``is a field of computer science that aims to teach computers how to learn and act without being explicitly programmed\cite{MachineLearning2019}". ``Artificial Intelligence - A Modern Approach'' identifies four deciding factors that determine the improvements to an agent's component and how to make them:
+Machine learning is ``is a field of computer science that aims to teach computers how to learn and act without being explicitly programmed \parencite{MachineLearning2019}". ``Artificial Intelligence - A Modern Approach'' identifies four deciding factors that determine the improvements to an agent's component and how to make them:
 \begin{enumerate}
     \item Which component of the agent will be improved.
     \item What prior knowledge the agent already holds.
@@ -79,7 +79,7 @@ As can be easily gleamed, convolutional networks are primarily used in visual re
 
 Now, for recurrent networks. Recurrent networks were designed to tackle time-sequence problems, or tasks that require temporal context, often with long sequential data. As such, they process one element at a time (every time-step), and then pass the result of their computation to the next time step to facilitate the progress.
 \begin{figure}[h]
-    \caption{A recurrent unit, with its unrolled version. The three $s_{t-1}, s_t, s_{t+1}$ are the same unit in three different time steps\cite{lecunDeepLearning2015}. }
+    \caption{A recurrent unit, with its unrolled version. The three $s_{t-1}, s_t, s_{t+1}$ are the same unit in three different time steps \parencite{lecunDeepLearning2015}. }
     \includegraphics[width=\textwidth]{img/RNN.png}
 \end{figure}
 This type of recurrent neuron is only capable of limited time-context sizes: consider the phrase ``John went to pick up his truck and a bag of chips [...]. Later, \textit{he decided to...}''; as the size of [...] grows, the network's ability to predict the italics part dwindles to none, as it has to not only encode the information about the subject, but transmit it through multiple timesteps before using it. This is absolutely possible as hand-picked parameters, but networks have a hard time learning them.
